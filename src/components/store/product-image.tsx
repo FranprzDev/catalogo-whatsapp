@@ -10,11 +10,11 @@ export function ProductImage({ src, alt, className }: ProductImageProps) {
   if (!src) {
     return (
       <div
-        className={`flex items-center justify-center bg-neutral-100 text-4xl text-neutral-300 ${className ?? ""}`}
+        className={`flex items-center justify-center bg-neutral-100 text-xs font-medium text-neutral-400 ${className ?? ""}`}
         aria-label={alt}
         role="img"
       >
-        <span aria-hidden>👕</span>
+        Sin foto
       </div>
     );
   }
